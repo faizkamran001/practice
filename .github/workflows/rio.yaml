@@ -21,14 +21,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-     # - name: Build application
-     #  run: npm run build
+         # - name: Build application
+         #  run: npm run build
 
       - name: Deploy to server
         run: |
-          npm install
-     # npm run build
+         # npm install
+         # npm run build
           cd ~/practice
           git pull origin main
-          pm2 restart app.js
-          ssh -i "backend-deployment.pem" ubuntu@ec2-65-0-102-109.ap-south-1.compute.amazonaws.com"
+          npm 
+           ssh -i "backend-deployment.pem" ubuntu@ec2-65-0-102-109.ap-south-1.compute.amazonaws.com"
