@@ -31,4 +31,4 @@ jobs:
           cd ~/practice
           git pull origin main
           pm2 restart app.js
-          ssh -i "backend-deployment.pem" ubuntu@ec2-65-0-102-109.ap-south-1.compute.amazonaws.com && git pull && npm install && pm2 restart app"
+          ssh -i "backend-deployment.pem" ubuntu@ec2-65-0-102-109.ap-south-1.compute.amazonaws.com"
